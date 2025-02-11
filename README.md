@@ -131,12 +131,12 @@ JWT_SECRET=<tu_secreto_jwt>
     ```
 
 - **Listar Citas por Usuario**
-  - **URL:** `/adoptionSystem/v1/appointment/:uid`
+  - **URL:** `/adoptionSystem/v1/getAppointmentByUser/:uid`
   - **Método:** `GET`
 
  
 - **Cancelar Cita**
-  - **URL:** `/adoptionSystem/v1/appointment/cancelAppointment/:id`
+  - **URL:** `/adoptionSystem/v1/appointment/cancellAppointment/:id`
   - **Método:** `PATCH`
   - **Cuerpo:**
     ```json
@@ -147,8 +147,8 @@ JWT_SECRET=<tu_secreto_jwt>
 
 
 - **Actualizar Cita**
-  - **URL:** `/adoptionSystem/v1/appointment/updateAppintment/:uid`
-  - **Método:** `PUT`
+  - **URL:** `/adoptionSystem/v1/appointment/updateAppointment/:id`
+  - **Método:** `PATCH`
   - **Cuerpo:**
     ```json
     {

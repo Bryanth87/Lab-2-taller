@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "3e09c831-9ba2-49a8-9625-3d22977623da",
+		"name": "Lab-2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42058393"
+	},
+	"item": [
+		{
+			"name": "ActualizarCita",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"date\": \"2025-10-15T10:00:00Z\",\r\n  \"pet\": \"67aaa50acb264a1b1a294c1f\",\r\n  \"user\": \"67aaa186d7d0045d9e5221cc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3001/adoptionSystem/v1/appointment/updateAppointment/67aaa652cb264a1b1a294c23",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"appointment",
+						"updateAppointment",
+						"67aaa652cb264a1b1a294c23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CancelarCita",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3001/adoptionSystem/v1/appointment/cancelAppointment",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"appointment",
+						"cancelAppointment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarUsuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3001/adoptionSystem/v1/appointment/getAppointmentByUser/:uid/67aaa186d7d0045d9e5221cc",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"appointment",
+						"getAppointmentByUser",
+						":uid",
+						"67aaa186d7d0045d9e5221cc"
+					],
+					"variable": [
+						{
+							"key": "uid",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarFoto",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "profilePicture",
+							"type": "file",
+							"src": "/C:/Users/PC_01/Documents/1486135181-avatar.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3001/adoptionSystem/v1/user/updateProfilePicture/67aaa1c1d7d0045d9e5221d0",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"adoptionSystem",
+						"v1",
+						"user",
+						"updateProfilePicture",
+						"67aaa1c1d7d0045d9e5221d0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
